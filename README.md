@@ -29,7 +29,7 @@
 
 <br>
 
-  <h1>The react library to build dashboards fast</h1>
+  <h1>The react library to build dashboards fast - Bemmbo edition</h1>
 
 </div>
 
@@ -58,7 +58,8 @@ In your terminal, we create a new React project:
 npx create-react-app my-project --template typescript
 cd my-project
 ```
-*Using the `--template typescript` option is optional here.*
+
+_Using the `--template typescript` option is optional here._
 
 <br>
 
@@ -70,22 +71,25 @@ npm install @tremor/react
 
 <br>
 
-Import the tremor stylesheet into the `App.js` / `App.tsx`  file:
+Import the tremor stylesheet into the `App.js` / `App.tsx` file:
+
 ```tsx
-import '@tremor/react/dist/esm/tremor.css';
+import "@tremor/react/dist/esm/tremor.css";
 ```
-*Note, if you are importing other CSS files along with `tremor.css`, make sure to add the above import statement as the last one, in order to avoid unintentional CSS conflicts.*
+
+_Note, if you are importing other CSS files along with `tremor.css`, make sure to add the above import statement as the last one, in order to avoid unintentional CSS conflicts._
 <br>
 
 Finally, run the dev server.
+
 ```bash
 npm start
 ```
 
 <br>
 
+## Option B: Using NextJS
 
-## Option B: Using NextJS 
 **⚠️ Note:** Since we have not fully migrated to Next.js 13 yet, if you are using the `app` directory introduced in Next.js 13, wrap your tremor components in another component by using the `"use client"` directive. More infos on the directive and the usage of third-party libraries in Next.js 13 can be found in the [Next.js docs](https://beta.nextjs.org/docs/rendering/server-and-client-components#third-party-packages).
 
 In your terminal, we create a new Next project:
@@ -94,7 +98,8 @@ In your terminal, we create a new Next project:
 npx create-next-app my-project --typescript
 cd my-project
 ```
-*Using the `--typescript` option is optional here.*
+
+_Using the `--typescript` option is optional here._
 
 <br>
 
@@ -106,12 +111,13 @@ npm install @tremor/react
 
 <br>
 
-Import the tremor stylesheet into the `_app.js` / `_app.tsx`  file:
+Import the tremor stylesheet into the `_app.js` / `_app.tsx` file:
 
 ```bash
 import '@tremor/react/dist/esm/tremor.css'
 ```
-*Note, if you are importing other CSS files along with `tremor.css`, make sure to add the above import statement as the last one, in order to avoid unintentional CSS conflicts.*
+
+_Note, if you are importing other CSS files along with `tremor.css`, make sure to add the above import statement as the last one, in order to avoid unintentional CSS conflicts._
 <br>
 
 Finally, run the dev server
@@ -119,6 +125,7 @@ Finally, run the dev server
 ```bash
 npm run dev
 ```
+
 <br>
 <br>
 
@@ -140,14 +147,15 @@ export default () => (
   <Card maxWidth="max-w-sm">
     <Text>Sales</Text>
     <Metric>$ 71,465</Metric>
-    <Flex marginTop='mt-4'>
-        <Text>32% of annual target</Text>
-        <Text>$ 225,000</Text>
+    <Flex marginTop="mt-4">
+      <Text>32% of annual target</Text>
+      <Text>$ 225,000</Text>
     </Flex>
-    <ProgressBar percentageValue={ 32 } marginTop="mt-2" />
+    <ProgressBar percentageValue={32} marginTop="mt-2" />
   </Card>
 );
 ```
+
 <br>
 
 ![Tremor Banner](images/example.png)
@@ -164,4 +172,4 @@ We are always looking for new ideas or other ways to improve tremor. If you have
 
 [Apache License 2.0](https://github.com/tremorlabs/tremor/blob/main/License)
 
-Copyright &copy;  2022 Tremor. All rights reserved.
+Copyright &copy; 2022 Tremor. All rights reserved.
