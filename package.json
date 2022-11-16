@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tremorlabs/tremor.git"
+    "url": "https://github.com/bemmbo/tremor.git"
   },
   "author": "tremor",
   "license": "Apache 2.0",
   "bugs": {
-    "url": "https://github.com/tremorlabs/tremor/issues"
+    "url": "https://github.com/bemmbo/tremor/issues"
   },
-  "homepage": "https://github.com/tremorlabs/tremor#readme",
+  "homepage": "https://github.com/bemmbo/tremor#readme",
   "dependencies": {
     "@tippyjs/react": "^4.2.6",
     "date-fns": "^2.28.0",
@@ -73,7 +73,7 @@
     "react": "^17.0.2"
   },
   "publishConfig": {
-    "access": "public"
+    "registry": "https://npm.pkg.github.com/"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
