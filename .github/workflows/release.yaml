@@ -23,8 +23,8 @@ jobs:
         run: npm ci
       - name: build
         run: npm run rollup
-      - name: release
+      - name: Release
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx semantic-release
